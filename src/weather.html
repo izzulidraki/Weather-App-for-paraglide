@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Bar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initaial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="weather.css" />
+</head>
+<body>
+
+	<nav>
+		<div class="logo">
+			<p>paragliding.co</p>
+		</div>
+		<ul>
+			<li><a href="" class="active">home</a></li>
+			<li><a href="index.html">note</a></li>
+			<li><a href="#" onclick="self.close();">exit</a></li>
+		</ul>
+	</nav>
+
+	<div id="box1">
+		<h1>Paragliding Rules</h1>
+        <br>
+		<ul>
+			<li>The first thing to watch out for when paragliding is the wind. If you do paragliding 
+				without paying attention to the wind, your parachute may shut down or you may have 
+				difficulty controlling yourself.</li>
+			<li>Helmets must be worn on all flights. In addition, visibility during flight should not 
+				be less than 1800m.</li>
+			<li>The selected flight areas should be suitable for flight. There should be no obstacles 
+				such as trees or shrubs. </li>
+			<li>Take off and landing areas, wind cover, etc. should be taken into consideration. 
+				In addition, first aid kit must be available in the flight area. </li>
+		</ul>
+	</div>
+
+    <div id="box2">
+		<h1>Suggested Place for Paragliding</h1>
+        <br>
+		<ul>Europe
+			<li>Annecy, France</li>
+			<li>Reykjavik, Iceland</li>
+			<li>Crete, Greece</li>
+		</ul>
+        <br>
+        <ul>Asia
+			<li>Pokhara, Nepal</li>
+			<li>Dalat, Vietnam</li>
+			<li>Krabi, Thailand</li>
+		</ul>
+        <br>
+        <ul>America
+			<li>Puebla, Mexico</li>
+			<li>Hawaii, USA</li>
+			<li>Pemberton, Canada</li>
+		</ul>
+	</div>
+	
+
+	<div class="main-container">
+        <div class="container top">
+            <h1>Weather App</h1>
+            <form action="" onsubmit="return false">
+                <input type="text" class="search" placeholder="Search by city name">
+                <button type="submit" class="btn">Submit</button>
+                <p class="error"></p>
+            </form>
+            <section>
+                <div class="container">
+                    <div class="icon">
+                        <img src="" alt="" class="weather-icon">
+                    </div>
+                    <div class="location">
+                        <div class="city">Kuala Lumpur, Malaysia</div>
+                        <div class="date">Thursday, Dec 26 2020</div>
+                    </div>
+                    <div class="current">
+                        <div class="temp">Temp: 31.5 <span>°C</span></div>
+                        <div class="weather">Weather: Rain</div>
+                        <div class="temp-range">Temp Range: 30°C / 32°C</div>
+                        <div class="speed">Wind speed: 25 </div>
+                        <div class="deg">Degree: 25° </div>
+                        <div class="gust">Wind gust: 25% </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+	<script src="weather.js"></script>
+</body>
+</html>
